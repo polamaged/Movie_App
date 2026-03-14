@@ -1,0 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+class InactiveItemNavigationbar extends StatelessWidget {
+  const InactiveItemNavigationbar({super.key, required this.image});
+  final String image;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.transparent,
+      child: SvgPicture.asset(image, width: 24, height: 24),
+    );
+  }
+}
